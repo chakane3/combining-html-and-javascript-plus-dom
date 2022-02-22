@@ -16,28 +16,43 @@
 
     <input id="mirror-input" type="text" placeholder="Enter your string here">
     <p id="mirror-output">Waiting for input...</p>
-    <button id="mirror-button" type="submit">Submit</button>
+    <button onclick="mirrorString()" id="mirror-button" type="submit">Submit</button>
 
     <h2>2. String Uppercaser</h2>
 
     <li>Make a text input with id='uppercaser-input'</li>
     <li>They should then be able to click a "submit" button with id='uppercaser-button' that will display the string the user entered in all uppercase in an element with id='uppercaser-output'</li>
+    
+    <input id="uppercaser-input" type="text" placeholder="enter string to be uppercased" /><br>
+    <p id="uppercaser-output">output here</p>
+    <button type="submit" onclick="makeUppercase()" id="uppercaser-button" >Submit</button>
 
     <h2>3. Palindrome Detector</h2>
 
     <li>The user should be able to enter a string into a text input with id='palindrome-input'</li>
     <li>They should then be able to click a "submit" button with id='palindrome-button'. Clicking the button will display a string in the form "It is ${true/false} that ${entered string} is a palindrome" with id='palindrome-output'</li>
+    
+    <input id="palindrome-input" type="text" placeholder="enter string" /><br>
+    <p id="palindrome-output">It is ${true/false} that ${entered string} is a palindrome</p>
+    <button type="submit" onclick="palindromeCheck()" id="palindrome-button">Submit</button>
 
     <h2>4. Even Checker</h2>
 
     <li>The user should be able to enter a number into an input with id='even-checker-input'</li>
     <li>They should then be able to click a "submit" button with id='even-checker-button' that will display a string in the form "It is ${true/false} that ${entered number} is even" with id='even-checker-output'</li>
 
+    <input type="text" id="even-checker-input" placeholder="enter string" /><br>
+    <p id="even-checker-output" >It is ${true/false} that ${entered number} is even</p>
+    <button type="submit" onclick="evenCheck()" id="even-checker-button">Submit</button>
+
     <h2>5. Number Doubler</h2>
 
     <li>The user should be able to enter a number into an input with id='doubler-input'</li>
     <li>They should then be able to click a "submit" button with id='doubler-button' that will display a string in the form "${entered number} doubled is ${doubledVal}" with id='doubler-output'</li>
-
+    
+    <input type="text" id="doubler-input" placeholder="enter number" />
+    <p id="doubler-output">${entered number} doubled is ${doubledVal}</p>
+    <button onclick="doubleNumber()" id="doubler-button">Submit</button>
     <h2>6. Average of Three Numbers</h2>
 
     <li>The user should be able to enter 3 numbers into text inputs with ids 'average-input-1', 'average-input-2', and 'average-input-3'</li>
@@ -50,4 +65,5 @@
     <li>They should then be able to click a "submit" button with id='vowel-remover-button' that will display the original string with all vowels removed with id='vowel-remover-output'. If the checkbox is checked, count y as a vowel. Otherwise, count y as a consonant.</li>
 
   </body>
+  <script src="script1.js"></script>
 </html>
